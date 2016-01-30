@@ -1,3 +1,57 @@
+## Master
+
+##### Breaking
+
+* Change `Line` from tuple to struct with extra properties `range` and `byteRange`.  
+  [Norio Nomura](https://github.com/norio-nomura)
+
+##### Enhancements
+
+* None.
+
+##### Bug Fixes
+
+* None.
+
+## 0.8.0
+
+##### Breaking
+
+* Replaced all uses of `XPCDictionary`, `XPCArray`, `XPCRepresentable` &
+  `xpc_object_t` with SourceKit equivalents.  
+  [JP Simard](https://github.com/jpsim)
+
+##### Enhancements
+
+* Supports building with Swift 2.2 snapshot & Swift Package Manager on OS X.  
+  [JP Simard](https://github.com/jpsim)
+
+##### Bug Fixes
+
+* Fix crash when file contains NULL character.  
+  [Norio Nomura](https://github.com/norio-nomura)
+  [SwiftLint#379](https://github.com/realm/SwiftLint/issues/379)
+
+## 0.7.4
+
+##### Breaking
+
+* None.
+
+##### Enhancements
+
+* Add `Structure.init(sourceKitResponse:)`.  
+  [Norio Nomura](https://github.com/norio-nomura)
+
+* Improve performance of `Request.send()`.  
+  [Norio Nomura](https://github.com/norio-nomura)
+
+##### Bug Fixes
+
+* Add support for parsing module imports in Objective-C.  
+  [JP Simard](https://github.com/jpsim)
+  [jazzy#452](https://github.com/realm/jazzy/issues/452)
+
 ## 0.7.3
 
 ##### Breaking
